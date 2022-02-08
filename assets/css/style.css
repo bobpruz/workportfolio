@@ -46,3 +46,19 @@ header {
         font-weight: lighter;
         font-size: 1.55vw;
       }
+
+      .hero {
+        background-color: aquamarine;
+        display: flex;
+        justify-content: right;
+        flex-wrap: wrap;
+        background-size: cover;
+        align-items: flex-start;
+      }
+
+      .hero div {
+        padding: 20px;
+        background-color: white;
+        width: 30%;
+        margin: 3.5%;
+       }
