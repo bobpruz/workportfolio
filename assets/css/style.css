@@ -132,10 +132,14 @@ header nav ul li a {
   padding: 1%;
 }
 
-.work1 img {
+.work1 a {
+  width: 100%;
+}
+
+.work1 a img {
   flex: 1 0 0;
   opacity: 80%;
-  max-width: 100%;
+  width: 100%;
 }
 
 .work1 img:hover {
