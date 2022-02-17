@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+/* Header Start */
+
 header {
   display: flex;
   padding: 20px 35px;
@@ -47,6 +49,8 @@ header nav ul li a {
   font-size: 1.75vw;
 }
 
+/* Header Stop */
+
 /* Start Hero Banner */
 
 .hero {
@@ -70,7 +74,9 @@ header nav ul li a {
   text-align: center;
 }
 
-/* Start Main Content */
+/* Hero Stop */
+
+/* Work Content Start */
 
 .section-name {
   display: flex;
@@ -157,7 +163,7 @@ header nav ul li a {
 
 .work-card a {
   display: flex;
-  max-width: 50%;
+  width: 50%;
   padding: 1%;
 }
 
@@ -170,6 +176,10 @@ header nav ul li a {
 .work-card a img:hover {
   opacity: 100%;
 }
+
+/* Work Content Stop */
+
+/* Contact Info Start */
 
 .contact-me {
   display: flex;
@@ -203,6 +213,9 @@ header nav ul li a {
   font-size: 1.55vw;
 }
 
+/* Contact Info Stop */
+
+/* Media Types Start */
 
 @media screen and (max-width: 980px) {
   header {
@@ -226,3 +239,59 @@ header nav ul li a {
     font-weight: bold;
     font-size: 2.5vw;
   }
+
+  .about-me {
+    flex-direction: column;
+  }
+
+  .section-name {
+    border-right: none;
+    border-bottom: 3px red solid;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .about-me h3 {
+    font-size: 5.5vw;
+  }
+
+  .about-me article p {
+    font-size: 2.5vw;
+  }
+
+  .work {
+    display: block;
+  }
+
+  .work h3 {
+    font-size: 5.5vw;
+  }
+
+  .work-card {
+    width: 100%;
+  }
+
+  .work-card a {
+    width: 100%;
+  }
+
+  .contact-me {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  .contact-me h3 {
+    font-size: 5.5vw;
+  }
+
+  .contact-me nav {
+    justify-content: center;
+  }
+
+  .contact-me nav ul li a {
+    font-size: 2.55vw;
+  }
+
+}
+
+/* Media Type Stop (found this one works for all small screens */
