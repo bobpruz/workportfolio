@@ -1,3 +1,8 @@
+:root {
+  --primary-color: rgba(221, 48, 17, 0.87);
+  --primary-display: flex;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,9 +12,9 @@
 /* Header Start */
 
 header {
-  display: flex;
+  display: var(--primary-display);
   padding: 20px 35px;
-  background-color: rgba(221, 48, 17, 0.87);
+  background-color: var(--primary-color);
   justify-content: space-between;
   flex-wrap: wrap;
   top: 0;
@@ -36,7 +41,7 @@ header nav {
 }
 
 header nav ul {
-  display: flex;
+  display: var(--primary-display);
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
@@ -55,7 +60,7 @@ header nav ul li a {
 
 .hero {
   background-image: url("../images/background.jpg");
-  display: flex;
+  display: var(--primary-display);
   justify-content: right;
   flex-wrap: wrap;
   background-size: cover;
@@ -79,18 +84,18 @@ header nav ul li a {
 /* Work Content Start */
 
 .section-name {
-  display: flex;
+  display: var(--primary-display);
   justify-content: flex-end;
   flex: 0 0 15%;
   padding: 5px;
-  border-right: 3px red solid;
+  border-right: 3px solid var(--primary-color);
   margin-top: 10px;
   margin-bottom: 10px;
   padding-left: 35px;
 }
 
 .about-me {
-  display: flex;
+  display: var(--primary-display);
   justify-content: space-between;
 }
 
@@ -103,7 +108,7 @@ header nav ul li a {
 }
 
 .about-me article {
-  display: flex;
+  display: var(--primary-display);
   align-items: center;
   margin: 10px;
   flex-direction: column;
@@ -116,7 +121,7 @@ header nav ul li a {
 }
 
 .work {
-  display: flex;
+  display: var(--primary-display);
   justify-content: space-between;
 }
 
@@ -129,13 +134,15 @@ header nav ul li a {
 }
 
 .work-grid {
-  display: flex;
+  display: var(--primary-display);
   flex-direction: column;
 }
 
 .work1 {
-  display: flex;
+  display: var(--primary-display);
   padding: 1%;
+  position: relative;
+  margin: 0 3% 0 2%;
 }
 
 .work1 a {
@@ -153,16 +160,18 @@ header nav ul li a {
 }
 
 .work-card {
-  display: flex;
+  display: var(--primary-display);
   flex-wrap: wrap;
+  margin: 0 3% 0 2%;
 }
 
 .work-cards {
-  display: flex;
+  display: var(--primary-display);
+  position: relative;
 }
 
 .work-card a {
-  display: flex;
+  display: var(--primary-display);
   width: 50%;
   padding: 1%;
 }
@@ -177,12 +186,36 @@ header nav ul li a {
   opacity: 100%;
 }
 
+.language-big {
+  position: absolute;
+  padding: 5px;
+  background-color: black;
+  color: silver;
+  width: fit-content;
+  bottom: 5%;
+  left: 2%;
+  font-size: 3.5vw;
+  z-index: 9999;
+}
+
+.language-small {
+  position: absolute;
+  padding: 5px;
+  background-color: black;
+  color: silver;
+  width: fit-content;
+  bottom: 5%;
+  left: 2%;
+  font-size: 1.75vw;
+  z-index: 9999;
+}
+
 /* Work Content Stop */
 
 /* Contact Info Start */
 
 .contact-me {
-  display: flex;
+  display: var(--primary-display);
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -196,12 +229,12 @@ header nav ul li a {
 }
 
 .contact-me nav {
-  display: flex;
+  display: var(--primary-display);
   padding: 1%;
 }
 
 .contact-me nav ul {
-  display: flex;
+  display: var(--primary-display);
   justify-content: space-around;
   align-items: center;
   list-style: none;
@@ -267,6 +300,11 @@ header nav ul li a {
     font-size: 5.5vw;
   }
 
+  .work1 {
+    margin: 0 -1% 0 3%;
+    padding: 0%;
+  }
+
   .work-card {
     width: 100%;
   }
@@ -291,6 +329,17 @@ header nav ul li a {
   .contact-me nav ul li a {
     font-size: 2.55vw;
   }
+
+  .language-small {
+    position: absolute;
+    padding: 5px;
+    background-color: black;
+    color: silver;
+    width: fit-content;
+    bottom: 5%;
+    left: 2%;
+    font-size: 3.5vw;
+    z-index: 9999;
 
 }
 
