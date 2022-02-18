@@ -194,9 +194,15 @@ header nav ul li a {
   width: fit-content;
   bottom: 5%;
   left: 2%;
-  font-size: 3.5vw;
+  font-size: 2vw;
   z-index: 9999;
 }
+
+.language-big p {
+  font-size: 1vw;
+}
+
+
 
 .language-small {
   position: absolute;
@@ -208,6 +214,10 @@ header nav ul li a {
   left: 2%;
   font-size: 1.75vw;
   z-index: 9999;
+}
+
+.language-small p {
+  font-size: .75vw;
 }
 
 /* Work Content Stop */
