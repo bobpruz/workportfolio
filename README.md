@@ -18,4 +18,4 @@ The repository is maintained by Robert Prusinowski
 
 ### Screenshot 
 
-![Screenshot](screenshot.jpg)
+![Screenshot](screenshot.JPG)
