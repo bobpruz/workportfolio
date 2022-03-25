@@ -64,12 +64,11 @@ header nav ul li a {
   justify-content: space-between;
   flex-wrap: wrap;
   background-size: cover;
-  
 }
 
 .hero img {
-flex: content;
-max-width: 15%;
+  flex: content;
+  max-width: 15%;
 }
 
 .hero div {
@@ -211,8 +210,6 @@ max-width: 15%;
   font-size: 1.75vw;
 }
 
-
-
 .language-small {
   position: absolute;
   padding: 5px;
@@ -226,7 +223,7 @@ max-width: 15%;
 }
 
 .language-small p {
-  font-size: .75vw;
+  font-size: 0.75vw;
 }
 
 /* Work Content Stop */
@@ -274,11 +271,11 @@ max-width: 15%;
     padding-bottom: 0;
     justify-content: center;
   }
- 
+
   header h1 {
     width: 100%;
     text-align: center;
-    position: relative
+    position: relative;
   }
 
   haeder nav ul {
@@ -286,7 +283,7 @@ max-width: 15%;
     width: 100%;
     justify-content: center;
   }
- 
+
   header nav ul li a {
     font-weight: bold;
     font-size: 2.5vw;
@@ -359,11 +356,11 @@ max-width: 15%;
     left: 2%;
     font-size: 3.5vw;
     z-index: 9999;
+  }
 
-}
-
-.language-small p {
-  font-size: 1.75vw;
+  .language-small p {
+    font-size: 1.75vw;
+  }
 }
 
 /* Media Type Stop (found this one works for all small screens */
